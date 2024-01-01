@@ -1,0 +1,13 @@
+.news {
+    padding: 0 15px;
+    margin-bottom: 30px;
+
+    &__inner {
+        background: purple;
+        color: #fff;
+    }
+
+    &__thumbnail {
+        max-width: 100%
+    }
+}
