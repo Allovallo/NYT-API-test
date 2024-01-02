@@ -5,17 +5,17 @@ import {
 } from './scripts/newsApi';
 import newsTemplate from './templates/news.hbs';
 
-//title, url, abstarct, media[0].media-metadata[2]
+// title, url, abstract, media[0].media-metadata[2];
 
 const newsListTemplate = newsList => {
   return newsList.map(news => {
-    const { title, url, abstarct, media } = news;
+    const { title, url, abstract, media } = news;
 
     return newsTemplate({
       title,
       url,
-      abstarct,
-      //   imageSrc: media[0]['media-metadata'][2],
+      abstract,
+      // imageSrc: media[0]['media-metadata'][2],
     });
   });
 };
