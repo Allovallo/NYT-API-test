@@ -20,4 +20,4 @@ export const fetchSearchedArticles = query => {
   ).then(res => res.json());
 };
 
-export default { fetchPopularNews, fetchPopularNewsOnFacebook };
+export default { fetchPopularNews, fetchSearchedArticles };
