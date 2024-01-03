@@ -1,0 +1,16 @@
+.search {
+    width: 400px;
+    margin: 0 auto;
+    // margin-bottom: 30px;
+
+    &__input {
+        width: 100%;
+        display: block;
+        background: none;
+        border: 1px solid #fff;
+        border-radius: 4px;
+        font-size: 18px;
+        padding: 8px 15px;
+        color: inherit;
+    }
+}

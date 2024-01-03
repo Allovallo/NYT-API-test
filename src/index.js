@@ -1,8 +1,5 @@
 import './sass/index.scss';
-import {
-  fetchPopularNews,
-  fetchPopularNewsOnFacebook,
-} from './scripts/newsApi';
+import { fetchPopularNews, fetchSearchedArticles } from './scripts/newsApi';
 import newsTemplate from './templates/news.hbs';
 
 const newsListRef = document.querySelector('.news-list');
@@ -27,5 +24,7 @@ const newsListTemplate = newsList => {
 fetchPopularNews().then(({ results }) => {
   const newsListView = newsListTemplate(results);
   newsListRef.innerHTML = newsListView;
-  console.log(newsListView);
+  // console.log(newsListView);
 });
+
+// fetchSearchedArticles('Ukraine').then(console.log);
