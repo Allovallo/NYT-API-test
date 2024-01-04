@@ -24,5 +24,3 @@ fetchPopularNews().then(({ results }) => {
   const newsData = newsListAdapter(results);
   newsList.render(newsData);
 });
-
-// fetchSearchedArticles('Ukraine').then(console.log);
